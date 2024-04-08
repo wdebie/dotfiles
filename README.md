@@ -7,7 +7,7 @@ Config files for my personal Arch Linux configuration. I’m currently using bot
 sudo pacman -S chezmoi
 ```
 ```sh
-chezmoi init --apply dok4440
+chezmoi init --apply wdebie
 ```
 ```sh
 sudo pacman -S --needed - < ~/.pkg_list/cleanpkglist_noforeign ;
