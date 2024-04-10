@@ -1,10 +1,10 @@
-app=/usr/bin/google-chrome-stable
+app=ristretto
 custom_action_command=/usr/lib/xfce4/screenshooter/scripts/imgur-upload.sh %f %imgur_client_id
 last_user=
 last_extension=jpg
 enable_imgur_upload=true
 show_in_folder=true
-screenshot_dir=file:/home/wdb/Documents/dossinweb/img
+screenshot_dir=file:///home/wdb/Pictures
 action=2
 delay=0
 region=3

@@ -88,6 +88,13 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="blueman"/>
+        <value type="string" value="hexchat"/>
+        <value type="string" value="wi-fi network connection “orange-4bb67” active: orange-4bb67 (66%)"/>
+        <value type="string" value="wi-fi network connection “orange-4bb67” active: orange-4bb67 (77%)"/>
+        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (61%)"/>
+        <value type="string" value="wi-fi network connection “orange-4bb67” active: orange-4bb67 (54%)"/>
+        <value type="string" value="wi-fi network connection “eduroam” active: eduroam (65%)"/>
         <value type="string" value="wi-fi network connection “eduroam” active: eduroam (45%)"/>
         <value type="string" value="wi-fi network connection “orange-4bb67” active: orange-4bb67 (76%)"/>
         <value type="string" value="wi-fi network connection “eduroam” active: eduroam (58%)"/>
@@ -227,7 +234,7 @@
     <property name="plugin-23" type="string" value="fsguard"/>
     <property name="plugin-1" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="known-players" type="string" value="chromium.instance3253;firefox;Firefox;Microsoft Edge;Spotify;spotify;vlc"/>
+      <property name="known-players" type="string" value="Chrome;chromium.instance3253;Firefox;firefox;Microsoft Edge;spotify;Spotify;vlc"/>
     </property>
     <property name="plugin-15" type="string" value="tasklist">
       <property name="flat-buttons" type="bool" value="false"/>
@@ -238,7 +245,7 @@
     </property>
     <property name="plugin-16" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="16985189161.desktop"/>
+        <value type="string" value="17120044961.desktop"/>
       </property>
     </property>
     <property name="plugin-17" type="string" value="launcher">
@@ -294,16 +301,16 @@
       <property name="position-categories-horizontal" type="bool" value="false"/>
       <property name="position-categories-alternate" type="bool" value="false"/>
       <property name="recent" type="array">
-        <value type="string" value="vlc.desktop"/>
-        <value type="string" value="blueman-manager.desktop"/>
-        <value type="string" value="dev.vencord.Vesktop.desktop"/>
-        <value type="string" value="btop.desktop"/>
         <value type="string" value="code-oss.desktop"/>
-        <value type="string" value="teams.desktop"/>
-        <value type="string" value="virtualbox.desktop"/>
-        <value type="string" value="xfce4-screensaver-preferences.desktop"/>
+        <value type="string" value="pycharm.desktop"/>
+        <value type="string" value="firefox.desktop"/>
+        <value type="string" value="xfce4-mime-settings.desktop"/>
+        <value type="string" value="com.github.tchx84.Flatseal.desktop"/>
+        <value type="string" value="com.irccloud.desktop.desktop"/>
+        <value type="string" value="io.github.Hexchat.desktop"/>
+        <value type="string" value="xfce-session-settings.desktop"/>
+        <value type="string" value="com.google.Chrome.desktop"/>
         <value type="string" value="xfce-settings-manager.desktop"/>
-        <value type="string" value="tlpui.desktop"/>
       </property>
     </property>
     <property name="plugin-29" type="string" value="thunar-tpa"/>

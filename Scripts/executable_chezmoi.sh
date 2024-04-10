@@ -14,5 +14,5 @@ pacman -Qqem > ~/.pkg_list/foreignpkglist
 cd ~/.local/share/chezmoi
 chezmoi re-add
 read -p "Commit message: " MESSAGE
-git commit -a -S -m "$MESSAGE"
+git commit -a -m "$MESSAGE"
 git push --set-upstream origin main

@@ -1,7 +1,6 @@
 [user]
 	email = dokimakimaki@gmail.com
-	name = dok4440
-	signingkey = ED0B32E2EFCA9054FD306B9820247EF6CA11E551
+	name = wlinator
 [core]
 	editor = nvim
 	quotepath = false
