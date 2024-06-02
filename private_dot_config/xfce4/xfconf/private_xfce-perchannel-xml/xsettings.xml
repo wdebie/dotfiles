@@ -2,8 +2,8 @@
 
 <channel name="xsettings" version="1.0">
   <property name="Net" type="empty">
-    <property name="ThemeName" type="string" value="Greybird-dark"/>
-    <property name="IconThemeName" type="string" value="Adwaita"/>
+    <property name="ThemeName" type="string" value="Chicago95"/>
+    <property name="IconThemeName" type="string" value="Chicago95-tux"/>
     <property name="DoubleClickTime" type="empty"/>
     <property name="DoubleClickDistance" type="empty"/>
     <property name="DndDragThreshold" type="empty"/>
@@ -32,14 +32,14 @@
     <property name="MenuImages" type="bool" value="true"/>
     <property name="ButtonImages" type="bool" value="true"/>
     <property name="MenuBarAccel" type="empty"/>
-    <property name="CursorThemeName" type="empty"/>
+    <property name="CursorThemeName" type="string" value="Chicago95_Cursor_Black"/>
     <property name="CursorThemeSize" type="empty"/>
     <property name="DecorationLayout" type="empty"/>
     <property name="DialogsUseHeader" type="bool" value="false"/>
     <property name="TitlebarMiddleClick" type="empty"/>
   </property>
   <property name="Gdk" type="empty">
-    <property name="WindowScalingFactor" type="empty"/>
+    <property name="WindowScalingFactor" type="int" value="1"/>
   </property>
   <property name="Xfce" type="empty">
     <property name="SyncThemes" type="bool" value="false"/>

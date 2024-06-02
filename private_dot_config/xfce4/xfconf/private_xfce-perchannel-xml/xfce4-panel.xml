@@ -55,7 +55,6 @@
         <value type="int" value="28"/>
         <value type="int" value="16"/>
         <value type="int" value="18"/>
-        <value type="int" value="3"/>
         <value type="int" value="17"/>
         <value type="int" value="19"/>
         <value type="int" value="20"/>
@@ -88,6 +87,7 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="wi-fi network connection “orange-4bb67” active: orange-4bb67 (56%)"/>
         <value type="string" value="blueman"/>
         <value type="string" value="hexchat"/>
         <value type="string" value="wi-fi network connection “orange-4bb67” active: orange-4bb67 (66%)"/>
@@ -301,24 +301,19 @@
       <property name="position-categories-horizontal" type="bool" value="false"/>
       <property name="position-categories-alternate" type="bool" value="false"/>
       <property name="recent" type="array">
-        <value type="string" value="code-oss.desktop"/>
-        <value type="string" value="pycharm.desktop"/>
+        <value type="string" value="org.kde.partitionmanager.desktop"/>
+        <value type="string" value="dev.vencord.Vesktop.desktop"/>
+        <value type="string" value="xfce4-terminal-emulator.desktop"/>
+        <value type="string" value="xfce-wm-settings.desktop"/>
+        <value type="string" value="xfce-ui-settings.desktop"/>
+        <value type="string" value="xfce-mouse-settings.desktop"/>
+        <value type="string" value="xfce-wmtweaks-settings.desktop"/>
         <value type="string" value="firefox.desktop"/>
-        <value type="string" value="xfce4-mime-settings.desktop"/>
-        <value type="string" value="com.github.tchx84.Flatseal.desktop"/>
-        <value type="string" value="com.irccloud.desktop.desktop"/>
-        <value type="string" value="io.github.Hexchat.desktop"/>
-        <value type="string" value="xfce-session-settings.desktop"/>
-        <value type="string" value="com.google.Chrome.desktop"/>
-        <value type="string" value="xfce-settings-manager.desktop"/>
+        <value type="string" value="com.discordapp.Discord.desktop"/>
+        <value type="string" value="code-oss.desktop"/>
       </property>
     </property>
     <property name="plugin-29" type="string" value="thunar-tpa"/>
-    <property name="plugin-3" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="16985937561.desktop"/>
-      </property>
-    </property>
     <property name="plugin-4" type="string" value="fsguard"/>
     <property name="plugin-22" type="string" value="clock">
       <property name="digital-layout" type="uint" value="3"/>

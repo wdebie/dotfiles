@@ -19,6 +19,7 @@ dunst
 edk2-shell
 efibootmgr
 exo
+fastfetch
 firefox
 flameshot
 flatpak
@@ -29,6 +30,7 @@ grub
 grub-customizer
 gvfs
 htop
+hugo
 i3-wm
 i3blocks
 i3lock
@@ -51,7 +53,6 @@ mkinitcpio
 mousepad
 nano
 ncdu
-neofetch
 neovim
 network-manager-applet
 networkmanager
@@ -69,6 +70,7 @@ powertop
 pulseaudio
 pulseaudio-alsa
 pulseaudio-bluetooth
+pycharm-community-edition
 python-gpgme
 python-ipykernel
 python-pip
@@ -80,6 +82,8 @@ reflector
 ristretto
 rmlint
 rofi
+rpi-imager
+rsync
 ruby
 sqlitebrowser
 sshfs
