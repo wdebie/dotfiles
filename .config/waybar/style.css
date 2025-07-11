@@ -56,31 +56,30 @@ button:hover {
 }
 
 #workspaces {
-    margin: 0 1px;
+    margin: 0;
     margin-right: 8px;
     border-right: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 #workspaces button {
     padding: 2px 8px;
-    margin: 0 1px;
+    margin: 0;
     background: transparent;
     color: #e8e8e8;
-    border-radius: 6px;
+    border-radius: 0;
     font-weight: 600;
-    border: 1px solid transparent;
 }
 
 #workspaces button.focused {
     background: rgba(255, 255, 255, 0.15);
     color: #e8e8e8;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 0 solid rgba(255, 255, 255, 0.2);
 }
 
 #workspaces button.urgent {
     background: rgba(170, 102, 102, 0.3);
     color: #e8e8e8;
-    border: 1px solid #aa6666;
+    border: 0 solid #aa6666;
 }
 
 #cpu,
