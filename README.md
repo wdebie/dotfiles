@@ -14,7 +14,7 @@ cd ~ && git clone git@github.com:wdebie/dotfiles.git .dotfiles && cd .dotfiles &
 ### Essential additional packages:
 Install [yay](https://github.com/Jguer/yay), then run:
 ```bash
-yay -S --needed alacritty fuzzel waybar wofi flameshot cliphist grim xdg-utils swaync zsh polkit polkit-gnome xdg-desktop-portal xdg-desktop-portal-wlr xdg-desktop-portal-gtk volumectl playerctl wl-clipboard wl-clipboard-x11 file-roller
+yay -S --needed alacritty fuzzel waybar wofi flameshot cliphist grim xdg-utils swaync zsh polkit polkit-gnome xdg-desktop-portal xdg-desktop-portal-wlr xdg-desktop-portal-gtk playerctl wl-clipboard wl-clipboard-x11 file-roller
 ```
 
 ### Fonts:
