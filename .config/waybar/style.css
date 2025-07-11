@@ -1,0 +1,239 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", "JetBrains Mono", "Noto Sans", monospace;
+    font-size: 14px;
+    font-weight: 500;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+window#waybar {
+    background: #2a2a2a;
+    color: #e8e8e8;
+    border-radius: 0;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    font-size: 13px;
+}
+
+button {
+    background: transparent;
+    border: none;
+    border-radius: 6px;
+    padding: 4px 8px;
+    margin: 0 2px;
+    box-shadow: none;
+}
+
+button:hover {
+    background: #404040;
+}
+
+#window {
+    margin: 0 8px;
+    padding: 4px 12px;
+    background: transparent;
+    border-radius: 6px;
+    font-weight: 400;
+    opacity: 0.9;
+    transition: all 0.2s ease;
+}
+
+.modules-left {
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 0 8px 8px 0;
+    margin: 1px 0 1px 0;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-left: none;
+}
+
+.modules-right {
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 8px 0 0 8px;
+    margin: 1px 0 1px 0;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-right: none;
+}
+
+#workspaces {
+    margin: 0 1px;
+    margin-right: 8px;
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+#workspaces button {
+    padding: 2px 8px;
+    margin: 0 1px;
+    background: transparent;
+    color: #e8e8e8;
+    border-radius: 6px;
+    font-weight: 600;
+    border: 1px solid transparent;
+}
+
+#workspaces button.focused {
+    background: rgba(255, 255, 255, 0.15);
+    color: #e8e8e8;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#workspaces button.urgent {
+    background: rgba(170, 102, 102, 0.3);
+    color: #e8e8e8;
+    border: 1px solid #aa6666;
+}
+
+#cpu,
+#memory {
+    margin: 0 4px;
+    padding: 2px 8px;
+    background: transparent;
+    color: #b8b8b8;
+    border: none;
+    border-radius: 0;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+#cpu {
+    margin-right: 8px;
+}
+
+#clock {
+    color: #b8b8b8;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+#clock.date {
+    color: #8a8a9a;
+}
+
+#pulseaudio {
+    color: #b8b8b8;
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-weight: normal;
+}
+
+#network {
+    color: #b8b8b8;
+    min-width: 120px;
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-weight: normal;
+}
+
+#battery {
+    color: #b8b8b8;
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-weight: normal;
+}
+
+#pulseaudio,
+#clock,
+#battery,
+#network {
+    margin: 0;
+    padding: 4px 12px;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    font-weight: 500;
+}
+
+#pulseaudio:hover,
+#clock:hover,
+#battery:hover,
+#network:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+#network {
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+#pulseaudio {
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+#clock {
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+#disk,
+#temperature,
+#backlight,
+#wireplumber,
+#mode,
+#scratchpad {
+    margin: 0 2px;
+    padding: 4px 12px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-weight: 500;
+}
+
+#tray {
+    background: transparent;
+    border: none;
+    margin-left: 8px;
+    padding-right: 12px;
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+#tray:hover {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#tray > .passive {
+    opacity: 0.6;
+}
+
+#tray > .needs-attention {
+    background: #b8b8b8;
+    color: #2a2a2a;
+    border-radius: 6px;
+}
+
+#idle_inhibitor {
+    margin: 0 6px;
+    color: #9a9a9a;
+}
+
+#idle_inhibitor.activated {
+    color: #aa6666;
+    background: rgba(204, 102, 102, 0.1);
+}
+
+#custom-vpn {
+    color: #8a8a9a;
+    background: rgba(138, 124, 168, 0.1);
+    border: 1px solid rgba(138, 124, 168, 0.2);
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+#battery.charging,
+#battery.plugged {
+    color: #7a9a7a;
+    background: rgba(107, 155, 107, 0.1);
+}
+
+#battery.warning {
+    color: #a5a5a5;
+    background: rgba(199, 166, 99, 0.1);
+}
+
+#battery.critical {
+    color: #aa6666;
+    background: rgba(204, 102, 102, 0.1);
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+}

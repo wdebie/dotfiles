@@ -1,0 +1,95 @@
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[cursor]
+unfocused_hollow = true
+
+[cursor.style]
+blinking = "On"
+shape = "Block"
+
+[env]
+TERM = "alacritty"
+
+[font]
+builtin_box_drawing = true
+size = 12.0
+
+[font.bold]
+family = "JetBrainsMono Nerd Font Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font Mono"
+style = "Bold Italic"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font Mono"
+style = "Italic"
+
+[font.normal]
+family = "JetBrainsMono Nerd Font Mono"
+style = "Regular"
+
+[font.offset]
+x = 1
+y = 1
+
+[scrolling]
+history = 10000
+
+[selection]
+save_to_clipboard = true
+
+[window]
+decorations = "none"
+decorations_theme_variant = "None"
+dynamic_padding = true
+dynamic_title = true
+opacity = 1
+title = "Alacritty"
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
+
+[window.padding]
+x = 6
+y = 6
+
+[general]
+live_config_reload = true
+ipc_socket = true
+
+# Colors (Alabaster Dark)
+# author tonsky
+
+[colors.primary]
+background = '#1a1b26'
+foreground = '#a9b1d6'
+
+[colors.cursor]
+text = '#0E1415'
+cursor = '#CECECE'
+
+[colors.normal]
+black = '#0E1415'
+red = '#e25d56'
+green = '#73ca50'
+yellow = '#e9bf57'
+blue = '#4a88e4'
+magenta = '#915caf'
+cyan = '#23acdd'
+white = '#f0f0f0'
+
+[colors.bright]
+black = '#777777'
+red = '#f36868'
+green = '#88db3f'
+yellow = '#f0bf7a'
+blue = '#6f8fdb'
+magenta = '#e987e9'
+cyan = '#4ac9e2'
+white = '#FFFFFF'
+

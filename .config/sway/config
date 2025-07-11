@@ -1,0 +1,121 @@
+set $mod Mod4
+set $term alacritty
+set $menu fuzzel
+
+smart_gaps off
+default_border pixel 0
+hide_edge_borders --i3 smart_no_gaps
+
+font pango:JetBrainsMono Nerd Font Mono 11
+
+floating_modifier $mod normal
+
+bindsym $mod+Return exec $term
+bindsym $mod+Shift+q kill
+bindsym $mod+d exec $menu
+bindsym $mod+Shift+n exec swaync-client -t -sw
+bindsym Print exec flameshot gui --raw --path ~/Pictures/Screenshots | wl-copy  
+bindsym $mod+v exec cliphist list | wofi -S dmenu | cliphist decode | wl-copy
+bindsym $mod+Shift+v exec cliphist wipe
+bindsym $mod+l exec swaylock -efF --image ~/.config/sway/bg00.jpg --scaling fill
+bindsym $mod+Shift+r reload
+bindsym $mod+Shift+e exec swaynag -t warning -m 'Exit?' -B 'Yes, exit sway' 'swaymsg exit'
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+bindsym $mod+1 workspace number 1
+bindsym $mod+2 workspace number 2
+bindsym $mod+3 workspace number 3
+bindsym $mod+4 workspace number 4
+bindsym $mod+5 workspace number 5
+bindsym $mod+6 workspace number 6
+bindsym $mod+7 workspace number 7
+bindsym $mod+8 workspace number 8
+bindsym $mod+9 workspace number 9
+bindsym $mod+0 workspace number 10
+bindsym $mod+Shift+1 move container to workspace number 1
+bindsym $mod+Shift+2 move container to workspace number 2
+bindsym $mod+Shift+3 move container to workspace number 3
+bindsym $mod+Shift+4 move container to workspace number 4
+bindsym $mod+Shift+5 move container to workspace number 5
+bindsym $mod+Shift+6 move container to workspace number 6
+bindsym $mod+Shift+7 move container to workspace number 7
+bindsym $mod+Shift+8 move container to workspace number 8
+bindsym $mod+Shift+9 move container to workspace number 9
+bindsym $mod+Shift+0 move container to workspace number 10
+bindsym $mod+b splith
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+bindsym $mod+f fullscreen
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+space focus mode_toggle
+bindsym $mod+a focus parent
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
+
+mode "resize" {
+    bindsym Left resize shrink width 10px
+    bindsym Down resize grow height 10px
+    bindsym Up resize shrink height 10px
+    bindsym Right resize grow width 10px
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
+bindsym --locked XF86AudioRaiseVolume exec volumectl up
+bindsym --locked XF86AudioLowerVolume exec volumectl down
+bindsym --locked XF86AudioMute exec volumectl toggle
+bindsym --locked XF86AudioMicMute exec volumectl -m toggle-mute
+bindsym --locked XF86AudioPlay exec playerctl play-pause
+bindsym --locked $mod+Shift+c exec playerctl play-pause
+bindsym --locked XF86AudioNext exec playerctl next
+bindsym --locked $mod+Shift+Next exec playerctl next
+bindsym --locked XF86AudioPrev exec playerctl previous
+bindsym --locked $mod+Shift+Prior exec playerctl previous
+bindsym --locked XF86MonBrightnessUp exec brightnessctl s +5%
+bindsym --locked XF86MonBrightnessDown exec brightnessctl s 5%-
+
+exec swaync
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec wl-paste --watch cliphist store
+exec mullvad-vpn
+exec filen-desktop
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+exec hash dbus-update-activation-environment 2>/dev/null && dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP
+
+exec_always nm-applet --indicator
+
+## DISPLAYS - depends on computer:
+# laptop
+output eDP-1 bg ~/.config/sway/bg00.jpg fill
+
+# desktop
+output HDMI-A-1 mode 1920x1080@60Hz pos 0 0 bg ~/.config/sway/bg01.jpg fill 
+output DP-1 mode 1920x1080@60Hz pos 1920 0 bg ~/.config/sway/bg02.jpg fit
+
+for_window [app_id="flameshot"] border pixel 0, floating enable, fullscreen disable, move absolute position 0 0
+for_window [app_id="pavucontrol"] floating enable, sticky enable, border pixel 5px
+for_window [app_id="blueman-manager"] floating enable, sticky enable, border pixel 5px
+     
+bar {
+    swaybar_command waybar
+}
+
+input "type:keyboard" {
+	xkb_layout "gb"
+}
+
+input "type:touchpad" {
+	dwt enabled
+	tap enabled
+	middle_emulation enabled
+	natural_scroll disabled
+}
+
+include /etc/sway/config.d/*
