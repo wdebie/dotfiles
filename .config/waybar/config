@@ -4,8 +4,8 @@
     "modules-left": [
     	"tray",
         "sway/workspaces",
-	    "memory",
-	    "cpu",
+	"memory",
+	"cpu",
         "custom/media"
     ],
     "modules-center": [
@@ -87,12 +87,12 @@
         "on-click": "ags -t quicksettings"
     },
     "pulseaudio": {
-        "format": "{icon} {volume}% {format_source}",
-        "format-bluetooth": " {icon} {volume}% {format_source}",
-        "format-bluetooth-muted": "  {icon} {format_source}",
+        "format": "{icon}  {volume}% {format_source}",
+        "format-bluetooth": "  {icon} {volume}% {format_source}",
+        "format-bluetooth-muted": "   {icon} {format_source}",
         "format-muted": "  {format_source}",
         "format-source": " {volume}%",
-        "format-source-muted": "",
+        "format-source-muted": " ",
         "format-icons": {
             "default": [
                 "",
