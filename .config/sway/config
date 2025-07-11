@@ -94,8 +94,8 @@ exec_always nm-applet --indicator
 output eDP-1 bg ~/.config/sway/bg00.jpg fill
 
 # desktop
-output HDMI-A-1 mode 1920x1080@60Hz pos 0 0 bg ~/.config/sway/bg01.jpg fill 
-output DP-1 mode 1920x1080@60Hz pos 1920 0 bg ~/.config/sway/bg02.jpg fit
+output HDMI-A-1 mode 1920x1080@60Hz pos 0 0 bg ~/.config/sway/bg00.jpg fill 
+output DP-1 mode 1920x1080@60Hz pos 1920 0 bg ~/.config/sway/bg00.jpg fit
 
 for_window [app_id="flameshot"] border pixel 0, floating enable, fullscreen disable, move absolute position 0 0
 for_window [app_id="pavucontrol"] floating enable, sticky enable, border pixel 5px
