@@ -82,10 +82,13 @@ bindsym $mod+r mode "resize"
 exec swaync
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec wl-paste --watch cliphist store
-exec mullvad-vpn
 exec filen-desktop
 exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
 exec hash dbus-update-activation-environment 2>/dev/null && dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP
+
+# VPN
+#exec mullvad-vpn
+exec /usr/bin/python /usr/bin/protonvpn-app
 
 exec_always nm-applet --indicator
 

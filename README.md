@@ -115,7 +115,7 @@ user = "greeter"
 
 ## Notes to self
 
-- Essentials: `brave-bin mullvad-bin filen-desktop-bin`
+- Essentials: `brave-bin filen-desktop-bin` and `mullvad-bin` or `proton-vpn-gtk-app`
 - I like nemo as a file manager: `nemo nemo-fileroller nemo-terminal`
 - Install flatpak, get Warehouse, add user-repo, remove system-repo.
 

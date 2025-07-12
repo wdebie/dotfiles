@@ -12,7 +12,6 @@
         "sway/window"
     ],
     "modules-right": [
-        "network",
         "pulseaudio",
         "clock",
         "battery"
@@ -101,12 +100,6 @@
             ]
         },
         "on-click": "pavucontrol"
-    },
-    "custom/weather": {
-        "format": "{}",
-        "interval": 3600,
-        "exec": "curl -s 'https://wttr.in/~41.03508,28.98331?format=1'",
-        "exec-if": "ping wttr.in -c1"
     },
     "custom/vpn": {
         "tooltip": false,
