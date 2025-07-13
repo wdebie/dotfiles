@@ -117,6 +117,7 @@ user = "greeter"
 
 - Essentials: `brave-bin filen-desktop-bin` and `mullvad-bin` or `proton-vpn-gtk-app`
 - I like nemo as a file manager: `nemo nemo-fileroller nemo-terminal`
+- See [`plymouth`](https://wiki.archlinux.org/title/Plymouth)
 - Install flatpak, get Warehouse, add user-repo, remove system-repo.
 
 Daily use flatpak applications:
